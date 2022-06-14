@@ -1,0 +1,138 @@
+/* Attributi generali per tutti gli elementi*/
+* {
+    font-family: 'Quicksand', Arial, sans-serif; /*Con font fallbacks*/
+    font-size: 13px;
+
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    /*Immagine di sfondo*/
+    background-image: url("Images/background.jpg");
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+#content {
+    /*Overlay nero*/
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+#elementi {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+
+    color: white;
+}
+
+h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+p {
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 8px;
+}
+
+/*Header*/
+header {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding-top: 5%;
+    min-width: 200px;
+}
+
+.subtitle {
+    color: rgb(30, 236, 30);
+    font-size: 27px;
+}
+
+/*bottoni navigazione*/
+.nav {
+    text-align: center;
+
+    /*contorno verde per i pulsanti*/
+    background-color: rgb(30, 236, 30);
+    padding: 0.3px;
+
+}
+
+.nav li {
+    display: inline;
+    padding: 2.5px;
+}
+
+.nav a {
+    background-color: white;
+    padding: 3px;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: black;
+}
+
+/*Barra Carica*/
+.carica {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.Gino22 {
+    width: 35%;
+    background-color: rgb(255, 186, 59);
+}
+
+.Mike24 {
+    width: 60%;
+    background-color: rgb(13, 175, 13);
+}
+
+.Fede154 {
+    width: 10%;
+    background-color: rgb(175, 45, 45);
+}
+
+/*Aggiustamenti per Responsive website in base alla dimensione della finestra*/
+@media only screen and (max-width: 750px) {
+    body {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    .subtitle {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 2000px) {
+    body {
+        height: 100vh;
+        background-size: cover;
+    }
+}
